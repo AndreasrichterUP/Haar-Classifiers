@@ -1,2 +1,2 @@
 # Haar-Classifiers
-haar classifier for foraminifera
+This is a Haar-classifier to find foraminifera objects in microscope images.
