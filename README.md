@@ -21,6 +21,6 @@ which had to be replace by :
   cd ~/opencv/apps/haartraining
   g++ `pkg-config --libs --cflags opencv` -I. -o mergevec mergevec.cpp\
     cvboost.cpp cvcommon.cpp cvsamples.cpp cvhaarclassifier.cpp\
-    cvhaartraining.cpp\ #cvsamplesoutput.cpp\
+    cvhaartraining.cpp\ cvsamplesoutput.cpp\
     -lopencv_core -lopencv_calib3d -lopencv_imgproc -lopencv_highgui -lopencv_objdetect
   
