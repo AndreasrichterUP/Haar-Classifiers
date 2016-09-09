@@ -8,8 +8,7 @@ on a Linux Ubuntu, OpenCV 2.13
 
 The one tricky thing was this part:
 
-  cp src/mergevec.cpp ~/opencv/apps/haartraining
-  cd ~/opencv/apps/haartraining
+
   g++ `pkg-config --libs --cflags opencv` -I. -o mergevec mergevec.cpp\
     cvboost.cpp cvcommon.cpp cvsamples.cpp cvhaarclassifier.cpp\
     cvhaartraining.cpp\
@@ -17,8 +16,6 @@ The one tricky thing was this part:
 
 which had to be replace by :
   
-  cp src/mergevec.cpp ~/opencv/apps/haartraining
-  cd ~/opencv/apps/haartraining
   g++ `pkg-config --libs --cflags opencv` -I. -o mergevec mergevec.cpp\
     cvboost.cpp cvcommon.cpp cvsamples.cpp cvhaarclassifier.cpp\
     cvhaartraining.cpp\ cvsamplesoutput.cpp\
